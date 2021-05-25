@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALPHA-REGISTRATION</title>
+        <style>
+            .fm {
+                position: fixed;
+                width: 100%;
+                height: 70px;
+                background-color: black;
+                top: 0;
+            }
+            .fm-img {
+                width: 60px;
+                margin: 7px;
+                background-color: white;
+                border-radius: 100%;
+            }
+            .fm-bt {
+                color: gold;
+                float: right;
+                font-size: 52px;
+                background-color: inherit;
+                border-color: black;
+                padding-right: 15px;
+            }
+            #menu {
+                display: none;
+                position: fixed;
+                top: 70px;
+                right: 0;
+                width: 70%;
+                background-color: black;
+                text-align: right;
+                height: 100%;
+            }
+            .menu-a {
+                color: gold;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                display: block;
+                float: center;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-right: 20px;
+                text-decoration: none;
+            }
+            .main {
+                margin-top: 70px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .st-img {
+                width: 90%;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            article {
+                text-align: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1 {
+                font-size: 30px;
+                font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: rgb(87, 82, 82);
+            }
+            p {
+                font-size: 18px;
+                font-family: Calibri, sans-serif;
+                color: rgb(87, 82, 82);
+            }
+            a {
+                font-size: 18px;
+                color: rgb(201, 48, 48);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fm">
+            <img class="fm-img" src="images/alphalogo.png">
+            <button class="fm-bt" onclick="fmBT()">=</button>
+        </div>
+        <div id="menu">
+            <a class="menu-a" href="index.html">Home</a>
+            <a class="menu-a" href="">News</a>
+            <a class="menu-a" href="">Registration</a>
+            <a class="menu-a" href="">Gaming</a>
+        </div>
+        <img class="st-img" src="images/ffimg.jpg">
+
+        <!--main-->
+        <div class="main">
+            <!--this is for phones-->
+            <article>
+                <h1>Home</h1>
+                <p>This is the official webpage of ALPHA FOUNDATION. ALPHA FOUNDATION is a Gaming Tournament organizing foundation. Which is mainly based on
+                    Garena Free Fire (an online game). This website is made for providing you information about the gaming tournaments and the match streamings.
+                    GOOD LUCK ON HAVING A TOUR THROUGH THIS WEBSITE.
+                </p>
+            </article>
+            <!--/this is for phones-->
+            <!--Tournament-->
+                <div class="article">
+                    <h1>Tournament</h1>
+                    <img src="images/Copy of JUEGOS - Made with PosterMyWall.jpg" width="100%">
+                    <p>organizing tournaments is the most important and the main goal of this foundation. As it was said that this foundation is
+                        mainly based on organizing FF tournaments. to know about the latest tournament <a href="">click here.</a>
+                    </p>
+                </div>
+            <!--/Tournament-->
+        </div>
+
+        <!--js coding-->
+        <script>
+            function fmBT() {
+                var x = document.getElementById("menu");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+                else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
